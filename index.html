@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Serviço de Personal Chef com refeições personalizadas preparadas para tornar sua rotina mais prática, leve e saborosa.">
+  <meta name="theme-color" content="#596348">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Personal Chef | Comida personalizada para sua rotina">
+  <meta property="og:description" content="Refeições personalizadas, preparadas com cuidado para deixar a rotina da sua casa mais leve.">
+  <meta property="og:image" content="assets/images/IsabelaCozinhando.jpeg">
+  <title>Personal Chef | Comida personalizada para sua rotina</title>
+  <link rel="icon" type="image/png" href="assets/images/FaviconDef.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" data-header>
+    <div class="header-shell">
+      <nav class="desktop-nav desktop-nav--left" aria-label="Navegação principal">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#chef">Conheça a chef</a>
+      </nav>
+
+      <a class="brand" href="#inicio" aria-label="Página inicial">
+        <!-- Substitua por assets/images/logo.svg. O texto permanece como fallback. -->
+        <img class="brand__image is-missing" data-logo-path="assets/images/logo.svg" alt="" aria-hidden="true">
+        <span class="brand__fallback"><strong>Isabela</strong><small>personal chef</small></span>
+      </a>
+
+      <nav class="desktop-nav desktop-nav--right" aria-label="Atalhos">
+        <a href="#precos">Preços</a>
+        <a href="#faq">Perguntas Frequentes</a>
+        <a class="button button--header js-whatsapp" href="#contato">Entre em contato</a>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile" aria-hidden="true" data-mobile-menu>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#chef">Conheça a chef</a>
+      <a href="#precos">Preços</a>
+      <a href="#faq">Perguntas Frequentes</a>
+      <a class="button button--primary js-whatsapp" href="#contato">Entre em contato</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow reveal">Personal Chef <span aria-hidden="true">•</span> Comida de verdade</p>
+          <h1 id="hero-title" class="reveal">Sua rotina mais leve. Sua comida, feita para você.</h1>
+          <p class="hero__lead reveal">Eu entendo o ritmo da sua casa, planejo um cardápio que combina com você e preparo cada refeição com o cuidado de uma comida feita especialmente para a sua rotina.</p>
+
+          <div class="hero__actions reveal">
+            <a class="button button--primary js-whatsapp" href="#contato">Quero conhecer o serviço</a>
+            <a class="text-link" href="#como-funciona">Entenda como funciona <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <ul class="hero__facts reveal" aria-label="Diferenciais do serviço">
+            <li><span class="mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m6 12 4 4 8-9"/></svg></span>Cardápio personalizado</li>
+            <li><span class="mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9h-6v-6h-4v6H4z"/></svg></span>Feito na sua cozinha</li>
+            <li><span class="mini-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 5h14v15H5zM8 3v4m8-4v4M5 10h14"/></svg></span>Sua semana organizada</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal">
+          <span class="hero__note">feito com calma<br><strong>para a vida real</strong></span>
+          <figure class="media-frame media-frame--hero">
+            <div class="image-placeholder image-placeholder--hero" aria-hidden="true">
+              <svg viewBox="0 0 420 520" role="presentation">
+                <path d="M46 372c67-34 91-114 159-126 66-12 81 57 168 27v187H46z"/>
+                <circle cx="292" cy="150" r="73"/>
+                <path d="M82 92c76 20 85 90 35 140-24 24-52 34-72 36"/>
+              </svg>
+              <span>Imagem principal<br><small>IsabelaCozinhando.jpeg</small></span>
+            </div>
+            <!-- Imagem principal: substitua o arquivo mantendo este nome. -->
+            <img class="asset-image" src="assets/images/IsabelaCozinhando.jpeg" alt="Personal chef preparando uma refeição em uma cozinha acolhedora" width="720" height="880">
+          </figure>
+          <span class="organic-mark organic-mark--dots" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--warm" id="como-funciona" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Do seu jeito, sem complicação</p>
+            <h2 id="process-title">Como funciona</h2>
+          </div>
+          <p>Um processo simples, pensado para conhecer a sua casa antes de pensar no cardápio.</p>
+        </div>
+
+        <p class="scroll-hint" aria-hidden="true">Deslize para ver as etapas <span>→</span></p>
+        <ol class="process-grid mobile-rail stagger-group" tabindex="0" aria-label="Etapas do serviço; deslize horizontalmente para ver todas">
+          <li class="process-card reveal">
+            <span class="process-card__number">01</span>
+            <h3>Primeiro, nos conhecemos</h3>
+            <p>Conversamos sobre sua rotina, preferências, quantidade de pessoas e o que faria diferença no seu dia.</p>
+          </li>
+          <li class="process-card reveal">
+            <span class="process-card__number">02</span>
+            <h3>Montamos seu cardápio</h3>
+            <p>As refeições são combinadas com você, respeitando os sabores e hábitos da sua família.</p>
+          </li>
+          <li class="process-card reveal">
+            <span class="process-card__number">03</span>
+            <h3>É dia de cozinhar</h3>
+            <p>Vou até a sua casa e preparo tudo com técnica, cuidado e organização.</p>
+          </li>
+          <li class="process-card reveal">
+            <span class="process-card__number">04</span>
+            <h3>Sua semana fica pronta</h3>
+            <p>As refeições ficam porcionadas e orientadas para você aproveitar melhor o seu tempo.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section benefits" aria-labelledby="benefits-title">
+      <div class="container benefits__grid">
+        <div class="benefits__intro reveal">
+          <p class="eyebrow">Cuidado que cabe na rotina</p>
+          <h2 id="benefits-title">Mais do que cozinhar. É devolver tempo para o seu dia.</h2>
+          <p>Enquanto a cozinha fica organizada, você ganha espaço para o que realmente pede a sua atenção — sem abrir mão do sabor de casa.</p>
+          <a class="text-link" href="#precos">Conheça as possibilidades <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="benefits__composition stagger-group" tabindex="0" role="region" aria-label="Benefícios do serviço">
+          <article class="benefit-card benefit-card--wide reveal">
+            <span class="benefit-card__line" aria-hidden="true"></span>
+            <h3>Comida que reconhece você</h3>
+            <p>Preferências, hábitos e momentos da família orientam cada escolha do cardápio.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 7h20M9 3v8m14-8v8M6 12h20v15H6zM11 18h4m3 0h4m-11 5h4"/></svg></span>
+            <h3>Mais organização</h3>
+            <p>Refeições planejadas e porcionadas para facilitar a semana.</p>
+          </article>
+          <article class="benefit-card benefit-card--accent reveal">
+            <span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M25 5C14 5 7 10 7 20c5-7 10-9 18-15ZM7 20c-1 3-1 5-1 8m1-8c4 0 8 1 11 4"/></svg></span>
+            <h3>Menos desperdício</h3>
+            <p>Compras e quantidades pensadas com intenção e melhor aproveitamento.</p>
+          </article>
+          <article class="benefit-card benefit-card--wide reveal">
+            <span class="benefit-card__line" aria-hidden="true"></span>
+            <h3>Flexibilidade de verdade</h3>
+            <p>O serviço acompanha mudanças de fase, agenda, preferências e necessidades da casa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--olive" id="chef" aria-labelledby="chef-title">
+      <div class="container chef__grid">
+        <div class="chef__visual reveal">
+          <figure class="media-frame media-frame--portrait">
+            <div class="image-placeholder image-placeholder--chef" aria-hidden="true">
+              <svg viewBox="0 0 420 520" role="presentation"><circle cx="210" cy="164" r="76"/><path d="M84 480c10-126 58-200 126-200s116 74 126 200"/><path d="M50 88c72 38 112 4 151-32 31 43 87 54 166 28"/></svg>
+              <span>Foto da chef<br><small>FotoIsabela.jpeg</small></span>
+            </div>
+            <!-- Retrato: substitua assets/images/FotoIsabela.jpeg pela foto profissional. -->
+            <img class="asset-image" src="assets/images/FotoIsabela.jpeg" alt="Retrato da personal chef Isabela" width="720" height="900" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="chef__content reveal">
+          <p class="eyebrow eyebrow--light">Conheça a chef</p>
+          <h2 id="chef-title">Prazer, eu sou a Isabela.</h2>
+          <p class="chef__lead">Acredito que uma boa alimentação começa por ouvir: entender a rotina, os gostos e as memórias que cada pessoa traz para a mesa.</p>
+          <p>Meu trabalho une planejamento, técnica e cuidado para transformar a cozinha da sua casa em uma aliada. Cada atendimento é único — do cardápio à forma como tudo fica organizado.</p>
+          <blockquote>“Cozinhar para alguém também é uma forma de cuidar.”</blockquote>
+          <div class="signature" aria-label="Assinatura da chef">Isabela <span>— Personal Chef</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="experience__heading reveal">
+          <p class="eyebrow">Da preparação à mesa</p>
+          <h2 id="experience-title">Uma cozinha em harmonia com a sua casa.</h2>
+        </div>
+
+        <div class="gallery mobile-rail stagger-group" tabindex="0" role="region" aria-label="Galeria da experiência; deslize horizontalmente para ver todas as imagens">
+          <figure class="gallery__item gallery__item--tall reveal">
+            <div class="image-placeholder image-placeholder--food" aria-hidden="true"><span>Preparação<br><small>food-01.jpg</small></span></div>
+            <img class="asset-image" src="assets/images/Mercado1.jpeg" alt="Registro da preparação durante um atendimento de Personal Chef" width="1200" height="1600" loading="lazy">
+            <figcaption>Escolhas cuidadosas</figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--wide reveal">
+            <div class="image-placeholder image-placeholder--food image-placeholder--food-alt" aria-hidden="true"><span>Prato final<br><small>food-02.jpg</small></span></div>
+            <img class="asset-image" src="assets/images/Isabela Cortando.jpeg" alt="Registro de uma refeição preparada pela Personal Chef" width="1600" height="1200" loading="lazy">
+            <figcaption>Sabor de comida feita na hora</figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--small reveal">
+            <div class="image-placeholder image-placeholder--food image-placeholder--food-dark" aria-hidden="true"><span>Organização<br><small>food-03.jpg</small></span></div>
+            <img class="asset-image" src="assets/images/Marmitinhas Aline2 com efeito.jpeg" alt="Registro da organização do serviço na cozinha" width="1200" height="1600" loading="lazy">
+            <figcaption>Tudo pronto para a semana</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--warm pricing" id="precos" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <div>
+            <p class="eyebrow">Formatos de atendimento</p>
+            <h2 id="pricing-title">Um cuidado para cada rotina</h2>
+          </div>
+          <p>Os formatos abaixo são referências iniciais e podem ser ajustados após nossa conversa.</p>
+        </div>
+
+        <div class="pricing-grid mobile-rail stagger-group" tabindex="0" role="region" aria-label="Formatos de atendimento; deslize horizontalmente para comparar">
+          <article class="price-card reveal">
+            <div class="price-card__header">
+              <p class="price-card__kicker">Para começar</p>
+              <h3>Essencial</h3>
+              <p>Para organizar alguns dias da semana com praticidade.</p>
+            </div>
+            <ul>
+              <li>Cardápio personalizado</li>
+              <li>1 dia de preparo</li>
+              <li>Refeições porcionadas</li>
+              <li>Orientações de armazenamento</li>
+            </ul>
+            <p class="price-card__price"><small>A partir de</small> R$ XXX</p>
+            <a class="button button--outline js-whatsapp" data-plan="Essencial" href="#contato">Solicitar atendimento</a>
+          </article>
+
+          <article class="price-card price-card--featured reveal">
+            <span class="price-card__tag">Mais escolhido</span>
+            <div class="price-card__header">
+              <p class="price-card__kicker">Equilíbrio na semana</p>
+              <h3>Rotina</h3>
+              <p>Para deixar almoço e jantar bem encaminhados.</p>
+            </div>
+            <ul>
+              <li>Cardápio personalizado</li>
+              <li>Maior variedade de preparos</li>
+              <li>Refeições porcionadas</li>
+              <li>Organização da geladeira</li>
+            </ul>
+            <p class="price-card__price"><small>A partir de</small> R$ XXX</p>
+            <a class="button button--primary js-whatsapp" data-plan="Rotina" href="#contato">Solicitar atendimento</a>
+          </article>
+
+          <article class="price-card reveal">
+            <div class="price-card__header">
+              <p class="price-card__kicker">Mais preparos</p>
+              <h3>Família</h3>
+              <p>Para casas que precisam de mais volume e variedade.</p>
+            </div>
+            <ul>
+              <li>Cardápio para a família</li>
+              <li>Volume ampliado</li>
+              <li>Refeições porcionadas</li>
+              <li>Planejamento de conservação</li>
+            </ul>
+            <p class="price-card__price"><small>A partir de</small> R$ XXX</p>
+            <a class="button button--outline js-whatsapp" data-plan="Família" href="#contato">Solicitar atendimento</a>
+          </article>
+        </div>
+        <p class="pricing__note reveal">Ingredientes, deslocamento e quantidade final serão alinhados na proposta personalizada.</p>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <div class="faq__intro reveal">
+          <p class="eyebrow">Perguntas frequentes</p>
+          <h2 id="faq-title">Antes de começarmos</h2>
+          <p>Cada casa tem uma dinâmica. Aqui estão respostas iniciais para deixar o processo mais claro.</p>
+          <a class="text-link js-whatsapp" href="#contato">Ainda tenho uma dúvida <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="accordion reveal" data-accordion>
+          <article class="accordion__item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">Como funciona o serviço de Personal Chef?<span aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="faq-answer-1" role="region" aria-labelledby="faq-question-1"><div><p>Começamos com uma conversa sobre sua rotina e preferências. Depois, alinhamos o cardápio, o formato do atendimento e o dia em que a chef irá preparar as refeições na sua casa.</p></div></div>
+          </article>
+          <article class="accordion__item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">A chef cozinha na minha casa?<span aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="faq-answer-2" role="region" aria-labelledby="faq-question-2"><div><p>Sim. A preparação acontece na sua cozinha, com os utensílios disponíveis e os ajustes combinados previamente para que o dia flua com tranquilidade.</p></div></div>
+          </article>
+          <article class="accordion__item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">Os ingredientes estão inclusos?<span aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="faq-answer-3" role="region" aria-labelledby="faq-question-3"><div><p>A forma de compra dos ingredientes será definida na proposta. A chef pode orientar a lista ou, conforme o formato contratado, cuidar dessa etapa para você.</p></div></div>
+          </article>
+          <article class="accordion__item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">Posso escolher o cardápio?<span aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="faq-answer-4" role="region" aria-labelledby="faq-question-4"><div><p>Claro. O cardápio é construído em conjunto, unindo suas preferências às sugestões da chef e à praticidade desejada para a semana.</p></div></div>
+          </article>
+          <article class="accordion__item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">É possível adaptar o menu para restrições alimentares?<span aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="faq-answer-5" role="region" aria-labelledby="faq-question-5"><div><p>Restrições e preferências podem ser consideradas no planejamento, desde que informadas previamente. Casos com orientação clínica devem seguir as recomendações do profissional de saúde responsável.</p></div></div>
+          </article>
+          <article class="accordion__item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">Quantas refeições são preparadas?<span aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="faq-answer-6" role="region" aria-labelledby="faq-question-6"><div><p>A quantidade varia conforme o número de pessoas, os dias que você deseja cobrir e o formato escolhido. Tudo é dimensionado antes do atendimento.</p></div></div>
+          </article>
+          <article class="accordion__item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-7" id="faq-question-7">Como funciona o armazenamento?<span aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="faq-answer-7" role="region" aria-labelledby="faq-question-7"><div><p>As refeições ficam porcionadas e identificadas conforme a melhor forma de conservação. Você também recebe orientações simples para aquecer e servir.</p></div></div>
+          </article>
+          <article class="accordion__item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-8" id="faq-question-8">Qual região é atendida?<span aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="faq-answer-8" role="region" aria-labelledby="faq-question-8"><div><p>Atendimento em Jundiaí e região. Envie uma mensagem pelo WhatsApp para confirmarmos disponibilidade e eventuais condições de deslocamento.</p></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="contato" aria-labelledby="contact-title">
+      <div class="container final-cta__inner reveal">
+        <span class="final-cta__sun" aria-hidden="true"></span>
+        <p class="eyebrow eyebrow--light">Vamos conversar?</p>
+        <h2 id="contact-title">Que tal deixar sua próxima semana mais leve?</h2>
+        <p>Conte um pouco sobre a sua rotina. A partir daí, pensamos juntas no formato que faz sentido para a sua casa.</p>
+        <a class="button button--light js-whatsapp" href="#contato">Conversar com a chef</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <a class="brand brand--footer" href="#inicio" aria-label="Voltar ao início">
+        <span class="brand__fallback"><strong>Isabela</strong><small>personal chef</small></span>
+      </a>
+      <div class="footer__location">
+        <span>Atendimento em</span>
+        <strong>Jundiaí e região</strong>
+      </div>
+      <nav class="footer__links" aria-label="Links do rodapé">
+        <a href="https://www.instagram.com/isa.personalchef/?hl=pt-br" target="_blank" rel="noopener noreferrer" aria-label="Acessar o Instagram da chef">
+          <span class="social-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="social-icon__dot" cx="17.4" cy="6.7" r="1"/></svg>
+          </span>
+          Instagram
+        </a>
+        <a class="js-whatsapp" href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" aria-label="Conversar com a chef pelo WhatsApp">
+          <span class="social-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20.3 11.6a8.3 8.3 0 0 1-12.2 7.3l-4.4 1.2 1.2-4.2A8.3 8.3 0 1 1 20.3 11.6Z"/><path d="M9 7.8c.2-.4.4-.4.7-.4h.4c.1 0 .3 0 .4.4l.8 2c.1.3.1.5-.1.7l-.6.7c-.2.2-.3.3-.1.6.5 1 1.2 1.8 2.1 2.4.8.5 1.4.7 1.7.8.3.1.5 0 .7-.2l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.4.2.4.4 0 .2-.1 1.1-.7 1.6-.5.6-1.3.9-2.1.8-.6 0-1.5-.2-3.1-.9a11 11 0 0 1-4.1-3.6c-1.1-1.5-1.5-3-1.5-3.8 0-.7.3-1.3.6-1.7Z"/></svg>
+          </span>
+          WhatsApp
+        </a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span data-current-year></span> Isabela Personal Chef. Todos os direitos reservados.</p>
+      <a href="#inicio">Voltar ao topo <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>
