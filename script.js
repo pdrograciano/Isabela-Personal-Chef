@@ -71,6 +71,19 @@ desktopMediaQuery.addEventListener("change", (event) => {
   if (event.matches) setMenuState(false);
 });
 
+document.querySelectorAll(".benefit-panel__toggle").forEach((button) => {
+  const panel = button.closest(".benefit-panel");
+  const description = document.getElementById(button.getAttribute("aria-controls"));
+
+  button.addEventListener("click", () => {
+    const willOpen = button.getAttribute("aria-expanded") !== "true";
+
+    button.setAttribute("aria-expanded", String(willOpen));
+    panel.classList.toggle("is-open", willOpen);
+    description.hidden = !willOpen;
+  });
+});
+
 document.querySelectorAll("[data-accordion] button").forEach((button) => {
   const panel = document.getElementById(button.getAttribute("aria-controls"));
   panel?.setAttribute("aria-hidden", "true");
