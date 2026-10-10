@@ -1777,28 +1777,6 @@ h3 {
   font-size: 0.72rem;
 }
 
-/* Reveal animation is activated only after JavaScript starts. */
-body.reveal-ready .reveal {
-  opacity: 0;
-  transform: translateY(1.5rem);
-  transition: opacity var(--transition-slow), transform var(--transition-slow);
-}
-
-body.reveal-ready .reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Above-the-fold content must never wait for observer scheduling to be readable. */
-body.reveal-ready .hero .reveal {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.stagger-group .reveal:nth-child(2) { transition-delay: 80ms; }
-.stagger-group .reveal:nth-child(3) { transition-delay: 160ms; }
-.stagger-group .reveal:nth-child(4) { transition-delay: 240ms; }
-
 @media (max-width: 47.999rem) {
   .hero__actions {
     display: grid;
@@ -1822,7 +1800,6 @@ body.reveal-ready .hero .reveal {
     content: none;
   }
 
-  body.reveal-ready .mobile-rail > .reveal,
   .mobile-rail > .process-card:hover {
     transform: none;
   }
@@ -2282,8 +2259,4 @@ body.reveal-ready .hero .reveal {
     animation-iteration-count: 1;
   }
 
-  body.reveal-ready .reveal {
-    opacity: 1;
-    transform: none;
-  }
 }

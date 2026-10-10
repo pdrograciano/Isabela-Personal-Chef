@@ -110,31 +110,6 @@ document.querySelectorAll(".asset-image, .brand__image").forEach((image) => {
   }
 });
 
-const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-const revealElements = [...document.querySelectorAll(".reveal")];
-
-if (!reduceMotion && "IntersectionObserver" in window) {
-  document.body.classList.add("reveal-ready");
-
-  const revealObserver = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      });
-    },
-    {
-      threshold: 0.12,
-      rootMargin: "0px 0px -8% 0px",
-    }
-  );
-
-  revealElements.forEach((element) => revealObserver.observe(element));
-} else {
-  revealElements.forEach((element) => element.classList.add("is-visible"));
-}
-
 let scrollTicking = false;
 
 function updateHeaderState() {
